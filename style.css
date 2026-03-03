@@ -441,7 +441,7 @@ home-content{
 
     }
 
-    .navbar .active{
+    .navbar.active{
         display:block;
 
     }
