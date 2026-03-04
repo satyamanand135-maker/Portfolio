@@ -482,3 +482,15 @@ home-content{
         flex-direction: column;
     }
 }
+
+.footer .robo{
+    display:flex;
+    height: 50vh;
+    width:50vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 26%;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
