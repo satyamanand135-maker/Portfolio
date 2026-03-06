@@ -432,6 +432,7 @@ home-content{
 @media(max-width:1024px){
     #menu-icon{
         display: block;
+        pointer-events: auto !important;
 
     }
 
@@ -624,4 +625,3 @@ home-content{
     border-color: rgb(71, 250, 71) ;
     z-index:10;
 }
-
