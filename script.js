@@ -16,7 +16,6 @@ menuIcon.onclick = () => {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    // 1. Make sure this ID matches your HTML (it was "blocks" in your screenshot)
     const blockContainer = document.getElementById("blocks"); 
     const blockSize = 50;
     const screenWidth = window.innerWidth;
@@ -30,7 +29,6 @@ window.addEventListener("DOMContentLoaded", () => {
             const block = document.createElement("div");
             block.classList.add("block");
             block.dataset.index = i;
-            // Attach the listener here so it has access to the variables
             block.addEventListener("mouseover", highlightRandomNeighbors);
             blockContainer.appendChild(block);
         }
@@ -47,11 +45,9 @@ window.addEventListener("DOMContentLoaded", () => {
             i >= 0 && i < numBlocks && Math.abs((i % numCols) - (index % numCols)) <= 1
         );
 
-        // Highlight current
         this.classList.add("highlight");
         setTimeout(() => this.classList.remove("highlight"), 500);
 
-        // Highlight neighbors - FIXING THE nIndex TYPO HERE
         shuffleArray(neighbors).slice(0, 1).forEach((neighborIndex) => {
             const neighbor = blockContainer.children[neighborIndex];
             if (neighbor) {
