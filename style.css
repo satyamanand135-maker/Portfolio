@@ -770,3 +770,44 @@ home-content{
     opacity:1;
     transform: translateZ(30px)rotateY(-10deg);
 }
+
+.title{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:0;
+    padding-bottom:0;
+
+
+}
+
+svg path{
+    fill: transparent;
+    stroke:rgba(0, 255, 0, 0.562);
+    stroke-width:0.4;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+    /* animation-timeline: view(20%, 50%); */
+    animation-timeline: view();
+    animation-range: entry 90% cover 100vh;
+
+}
+
+@keyframes textAnimation {
+    0%{
+        stroke-dashoffset: 500;
+    }
+
+    40%{
+        fill:transparent;
+    }
+
+    100%{
+        fill: var(--main-color);
+        stroke-dashoffset: 100;
+    }
+    
+}
