@@ -37,7 +37,7 @@ loader.load('./glb/ball.glb',
         mixer= new THREE.AnimationMixer(robo);
         mixer.clipAction(gltf.animations[0]).play();
 
-        modelMove();
+        // modelMove();
 
         
 
