@@ -1,3 +1,51 @@
+// import { AdditiveAnimationBlendMode } from "three/src/constants.js";
+
+const bioData = `// Initialize System...
+// authorized_access: true
+// status: active
+
+const satyam = {
+  role: "full-stack chaos coordinator",
+  stack: ["React", "Python", "Data Science"],
+  mission: "building digital ecosystems that don't mid.",
+  vibe: "pixel_perfect",
+  coffee: 0,
+  sanity: "low"
+};
+
+// > bypass_firewall.exe... [SUCCESS]
+// > let's cook.
+console.log("ready to build something insane.");`;
+
+let charIndex = 0;
+let started = false;
+
+function openTerminal(e) {
+    e.preventDefault(); // Stops the page from jumping
+    
+    const wrapper = document.getElementById("terminal-container");
+    const trigger = document.getElementById("read-more-trigger");
+
+    wrapper.classList.add("open"); // Slides it down
+    trigger.style.display = "none"; // Hides the button after click
+
+    if (!started) {
+        started = true;
+        setTimeout(typeWriter, 600); // Wait for slide to finish
+    }
+}
+
+function typeWriter() {
+    const container = document.getElementById("typewriter-code");
+    if (charIndex < bioData.length) {
+        container.textContent += bioData.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 40); 
+    }
+}
+
+
+
 const lenis = new Lenis();
 
 function raf(time) {
@@ -67,3 +115,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     createBloack();
 });
+
+
+
+// About Us Slide Trigger Addition
