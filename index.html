@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
 </head>
 <body>
@@ -36,18 +38,19 @@
     <section class="home section" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Satyam</span></h1>
-            <h3>I craft <span>Digital Experience</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos, corrupti autem, quis consequatur quae nulla modi cum dolorem id neque consectetur, voluptatibus cumque accusantium necessitatibus iusto voluptas excepturi vel.</p>
+            <h3>I craft <span>Digital Experience</span></h3><br><br>
+            <p>Full-Stack Dev by day, Data Scientist by night. I specialize in building high-performance systems with clean UI. If it doesn't have a dark mode and a smooth scroll, I probably didn't build it.Building future-proof logic while everyone else is still debugging the past.</p>
 
             <div class="social-icons">
-                <a href="https://github.com/satyamanand135-maker"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/satyamanand135-maker" target="_blank"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/_avariel11_?igsh=MTZ3ZThudW9lZnNoYQ=="><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/satyam-anand11/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8q%2F0kx%2BST1WJw0g6VI3MRw%3D%3D"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.instagram.com/_avariel11_?igsh=MTZ3ZThudW9lZnNoYQ==" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/satyam-anand11/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8q%2F0kx%2BST1WJw0g6VI3MRw%3D%3D" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
             </div>
             <div class="btn-group">
-                <a href="#" class="btn float-img">Hire</a>
-                <a href="#contact" class="btn float-img">Contact</a>
+                <a href="#services" class="btn">Hire</a>
+                <a href="#contact" class="btn ">Contact</a>
+                <a href="./assets/resume.pdf" target="_blank" class="btn">Resume</a>
             </div>
         </div>
 
@@ -62,8 +65,34 @@
         </div>
         <div class="about-content autoshow">
             <h2>About<span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos, corrupti autem, quis consequatur quae nulla modi cum dolorem id neque consectetur, voluptatibus cumque accusantium necessitatibus iusto voluptas excepturi vel.</p>
-            <a href="#" class="btn">Read More</a>
+            <p><span><i>I don't just write code; I build digital ecosystems.</i></span><br><br>
+
+My journey started with a curiosity for how data moves the world. Now, I spend my time bridging the gap between complex algorithms and intuitive user interfaces. I believe that tech should be powerful but also look like it belongs in the future.<br><br>
+
+Whether I'm training a model in Python or polishing a frontend in React, I'm focused on one thing: Efficiency. If it's not fast, scalable, and dark-mode friendly, is it even worth building?</p>
+            <a href="javascript:void(0)" class="btn" id="read-more-trigger" onclick="openTerminal(event)">[access_core]</a>
+
+            <!-- About Us Trigger -->
+
+            <div id="terminal-container" class="expand-wrapper">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="tab-name">about_me.js — Terminal</div>
+            </div>
+            <div class="terminal-body">
+                <code id="typewriter-code"></code>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- About Us Trigger End -->
+
         </div>
     </section>
 
@@ -99,25 +128,25 @@
         <div class="services-container">
             <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bxs-devices"></i>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <h4>Mobile App Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos, corrupti autem, quis consequatur quae nulla modi cum dolorem id neque consectetur, voluptatibus cumque accusantium necessitatibus iusto voluptas excepturi vel.</p>
+                    <p>Building seamless, cross-platform mobile experiences that don't just work—they feel fast. Focused on clean UI/UX and integrating real-time data to keep users engaged. If it's not native-feeling, it's not finished.</p>
                 </div>
             </div>
 
              <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bx-code"></i>
+                    <i class="fa-solid fa-terminal"></i>
                     <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos, corrupti autem, quis consequatur quae nulla modi cum dolorem id neque consectetur, voluptatibus cumque accusantium necessitatibus iusto voluptas excepturi vel.</p>
+                    <p>Architecting full-stack web applications with a focus on speed and scalability. I specialize in turning complex logic into smooth, dark-mode-first interfaces. High-fidelity designs meet clean, optimized code.</p>
                 </div>
             </div>
 
              <div class="service-box">
                 <div class="service-info">
-                    <i class="bx bx-code-curly"></i>
+                    <i class="fa-solid fa-microchip"></i>
                     <h4>Machine Learning</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos, corrupti autem, quis consequatur quae nulla modi cum dolorem id neque consectetur, voluptatibus cumque accusantium necessitatibus iusto voluptas excepturi vel.</p>
+                    <p>Translating raw data into predictive intelligence. I build and deploy models that solve real-world problems, from explainable AI to deep learning. It’s not just about the math; it’s about the insights.</p>
                 </div>
             </div>
         </div>
