@@ -117,5 +117,3 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// About Us Slide Trigger Addition

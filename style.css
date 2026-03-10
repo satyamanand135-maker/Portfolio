@@ -898,3 +898,8 @@ svg path{
 }
 
 @keyframes blink { 50% { opacity: 0; } }
+
+
+#contact-form{
+    pointer-events: auto;
+}
