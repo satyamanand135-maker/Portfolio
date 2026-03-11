@@ -117,3 +117,17 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
+const glitchTitles = ["「 satyam anand 」",
+    "『 satyam anand 』",
+    "⟨ satyam anand ⟩",
+    "| satyam anand |",
+    "// satyam anand"];
+
+function glitch() {
+    const randomTitle = glitchTitles[Math.floor(Math.random() * glitchTitles.length)];
+    document.title = randomTitle;
+    
+    setTimeout(glitch, Math.random() * 1500 + 500);
+}
+
+glitch();
